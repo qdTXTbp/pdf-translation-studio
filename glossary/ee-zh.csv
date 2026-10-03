@@ -1,0 +1,61 @@
+source,target,tgt_lng
+integrated circuit,集成电路,zh
+very large scale integration,超大规模集成,zh
+semiconductor device,半导体器件,zh
+transistor,晶体管,zh
+field effect transistor,场效应晶体管,zh
+bipolar junction transistor,双极结型晶体管,zh
+complementary metal oxide semiconductor,互补金属氧化物半导体,zh
+logic gate,逻辑门,zh
+digital circuit,数字电路,zh
+analog circuit,模拟电路,zh
+operational amplifier,运算放大器,zh
+filter design,滤波器设计,zh
+frequency response,频率响应,zh
+signal processing,信号处理,zh
+digital signal processing,数字信号处理,zh
+fast Fourier transform,快速傅里叶变换,zh
+sampling rate,采样率,zh
+analog to digital converter,模数转换器,zh
+digital to analog converter,数模转换器,zh
+modulation scheme,调制方式,zh
+wireless communication,无线通信,zh
+mobile communication,移动通信,zh
+orthogonal frequency division multiplexing,正交频分复用,zh
+multiple input multiple output,多输入多输出,zh
+channel capacity,信道容量,zh
+signal to noise ratio,信噪比,zh
+bit error rate,误码率,zh
+antenna array,天线阵列,zh
+radio frequency,射频,zh
+microwave circuit,微波电路,zh
+transmission line,传输线,zh
+impedance matching,阻抗匹配,zh
+power amplifier,功率放大器,zh
+low noise amplifier,低噪声放大器,zh
+phase locked loop,锁相环,zh
+oscillator,振荡器,zh
+embedded system,嵌入式系统,zh
+microcontroller,微控制器,zh
+field programmable gate array,现场可编程门阵列,zh
+application specific integrated circuit,专用集成电路,zh
+system on chip,片上系统,zh
+printed circuit board,印刷电路板,zh
+power electronics,电力电子,zh
+electric machine,电机,zh
+induction motor,感应电动机,zh
+permanent magnet,永磁,zh
+photovoltaic system,光伏系统,zh
+wind turbine,风力发电机,zh
+energy storage,储能,zh
+lithium ion battery,锂离子电池,zh
+fuel cell,燃料电池,zh
+smart grid,智能电网,zh
+power system stability,电力系统稳定,zh
+load forecasting,负荷预测,zh
+high voltage,高压,zh
+insulation material,绝缘材料,zh
+electromagnetic compatibility,电磁兼容,zh
+sensor network,传感器网络,zh
+internet of things,物联网,zh
+autonomous driving,自动驾驶,zh

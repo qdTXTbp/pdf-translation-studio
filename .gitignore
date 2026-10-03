@@ -1,0 +1,37 @@
+# 内置运行时（约 60 MB，随压缩包分发，不入源码仓库）
+runtime/
+
+# 本地配置：含 API Key，绝不入库
+config.json
+
+# 运行产物
+out/*
+!out/.gitkeep
+logs/*
+!logs/.gitkeep
+inbox/*
+!inbox/.gitkeep
+# OCR 中间产物。绝不能放进 out/：重试逻辑会清空那里的 *.pdf 来丢弃半成品，
+# 会把刚生成的 OCR 副本一起删掉。
+work/*
+!work/.gitkeep
+
+# 引擎资源缓存（约 330 MB，首次翻译时自动下载）
+assets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# 打包中间目录
+dist/
+_dist/

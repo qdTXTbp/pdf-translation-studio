@@ -1,0 +1,62 @@
+source,target,tgt_lng
+machine tool,机床,zh
+mechanical design,机械设计,zh
+mechanical property,力学性能,zh
+stress and strain,应力与应变,zh
+elastic deformation,弹性变形,zh
+plastic deformation,塑性变形,zh
+yield strength,屈服强度,zh
+tensile strength,抗拉强度,zh
+compressive strength,抗压强度,zh
+fatigue life,疲劳寿命,zh
+fracture toughness,断裂韧性,zh
+stress concentration,应力集中,zh
+finite element analysis,有限元分析,zh
+computer aided design,计算机辅助设计,zh
+computer aided manufacturing,计算机辅助制造,zh
+numerical control,数控,zh
+manufacturing process,制造工艺,zh
+additive manufacturing,增材制造,zh
+injection molding,注射成型,zh
+casting process,铸造工艺,zh
+welding process,焊接工艺,zh
+heat treatment,热处理,zh
+surface roughness,表面粗糙度,zh
+machining accuracy,加工精度,zh
+tolerance,公差,zh
+friction and wear,摩擦与磨损,zh
+lubrication,润滑,zh
+bearing capacity,承载能力,zh
+gear transmission,齿轮传动,zh
+hydraulic system,液压系统,zh
+pneumatic system,气动系统,zh
+servo motor,伺服电机,zh
+internal combustion engine,内燃机,zh
+gas turbine,燃气轮机,zh
+heat exchanger,换热器,zh
+refrigeration cycle,制冷循环,zh
+thermal efficiency,热效率,zh
+combustion,燃烧,zh
+fluid mechanics,流体力学,zh
+computational fluid dynamics,计算流体力学,zh
+turbulent flow,湍流,zh
+laminar flow,层流,zh
+Reynolds number,雷诺数,zh
+viscosity,黏度,zh
+pressure drop,压降,zh
+mass transfer,传质,zh
+heat transfer,传热,zh
+convection,对流,zh
+conduction,传导,zh
+radiation heat transfer,辐射换热,zh
+vibration analysis,振动分析,zh
+natural frequency,固有频率,zh
+modal analysis,模态分析,zh
+dynamic response,动态响应,zh
+control system,控制系统,zh
+feedback control,反馈控制,zh
+PID controller,PID控制器,zh
+robotics,机器人学,zh
+automation,自动化,zh
+measuring instrument,测量仪器,zh
+calibration,标定,zh

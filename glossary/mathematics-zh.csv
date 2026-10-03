@@ -1,0 +1,65 @@
+source,target,tgt_lng
+differential equation,微分方程,zh
+partial differential equation,偏微分方程,zh
+ordinary differential equation,常微分方程,zh
+boundary value problem,边值问题,zh
+initial value problem,初值问题,zh
+linear algebra,线性代数,zh
+linear transformation,线性变换,zh
+eigenvalue problem,特征值问题,zh
+matrix multiplication,矩阵乘法,zh
+inverse matrix,逆矩阵,zh
+symmetric matrix,对称矩阵,zh
+positive definite,正定,zh
+vector space,向量空间,zh
+inner product,内积,zh
+orthogonal basis,正交基,zh
+real analysis,实分析,zh
+complex analysis,复分析,zh
+functional analysis,泛函分析,zh
+measure theory,测度论,zh
+metric space,度量空间,zh
+topological space,拓扑空间,zh
+compactness,紧致性,zh
+convergence,收敛性,zh
+uniform convergence,一致收敛,zh
+continuity,连续性,zh
+differentiability,可微性,zh
+integrable function,可积函数,zh
+series expansion,级数展开,zh
+power series,幂级数,zh
+Fourier transform,傅里叶变换,zh
+Fourier series,傅里叶级数,zh
+Laplace transform,拉普拉斯变换,zh
+Taylor expansion,泰勒展开,zh
+numerical approximation,数值近似,zh
+finite element method,有限元法,zh
+finite difference method,有限差分法,zh
+Monte Carlo method,蒙特卡洛方法,zh
+iterative method,迭代法,zh
+convergence rate,收敛速率,zh
+optimization problem,优化问题,zh
+objective function,目标函数,zh
+constraint condition,约束条件,zh
+gradient descent,梯度下降,zh
+convex optimization,凸优化,zh
+linear programming,线性规划,zh
+number theory,数论,zh
+prime number,素数,zh
+algebraic structure,代数结构,zh
+group theory,群论,zh
+ring theory,环论,zh
+field theory,域论,zh
+combinatorics,组合数学,zh
+graph theory,图论,zh
+probability theory,概率论,zh
+random variable,随机变量,zh
+stochastic process,随机过程,zh
+Markov chain,马尔可夫链,zh
+discrete mathematics,离散数学,zh
+mathematical induction,数学归纳法,zh
+proof by contradiction,反证法,zh
+necessary condition,必要条件,zh
+sufficient condition,充分条件,zh
+if and only if,当且仅当,zh
+without loss of generality,不失一般性,zh

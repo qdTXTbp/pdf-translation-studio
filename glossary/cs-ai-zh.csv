@@ -1,0 +1,75 @@
+source,target,tgt_lng
+machine learning,机器学习,zh
+deep learning,深度学习,zh
+neural network,神经网络,zh
+convolutional neural network,卷积神经网络,zh
+recurrent neural network,循环神经网络,zh
+transformer architecture,Transformer架构,zh
+attention mechanism,注意力机制,zh
+self-attention,自注意力,zh
+large language model,大语言模型,zh
+generative model,生成模型,zh
+discriminative model,判别模型,zh
+reinforcement learning,强化学习,zh
+supervised learning,监督学习,zh
+unsupervised learning,无监督学习,zh
+semi-supervised learning,半监督学习,zh
+transfer learning,迁移学习,zh
+few-shot learning,少样本学习,zh
+zero-shot learning,零样本学习,zh
+representation learning,表示学习,zh
+contrastive learning,对比学习,zh
+fine-tuning,微调,zh
+pre-training,预训练,zh
+gradient descent,梯度下降,zh
+backpropagation,反向传播,zh
+loss function,损失函数,zh
+activation function,激活函数,zh
+regularization,正则化,zh
+overfitting,过拟合,zh
+underfitting,欠拟合,zh
+generalization ability,泛化能力,zh
+training set,训练集,zh
+validation set,验证集,zh
+test set,测试集,zh
+cross-validation,交叉验证,zh
+hyperparameter,超参数,zh
+batch size,批大小,zh
+learning rate,学习率,zh
+benchmark dataset,基准数据集,zh
+state of the art,当前最优,zh
+ablation study,消融实验,zh
+baseline method,基线方法,zh
+performance metric,性能指标,zh
+accuracy,准确率,zh
+precision and recall,精确率与召回率,zh
+F1 score,F1分数,zh
+confusion matrix,混淆矩阵,zh
+receiver operating characteristic,受试者工作特征,zh
+natural language processing,自然语言处理,zh
+computer vision,计算机视觉,zh
+image segmentation,图像分割,zh
+object detection,目标检测,zh
+feature extraction,特征提取,zh
+knowledge graph,知识图谱,zh
+information retrieval,信息检索,zh
+recommender system,推荐系统,zh
+distributed system,分布式系统,zh
+cloud computing,云计算,zh
+edge computing,边缘计算,zh
+operating system,操作系统,zh
+database management,数据库管理,zh
+query optimization,查询优化,zh
+software engineering,软件工程,zh
+version control,版本控制,zh
+unit testing,单元测试,zh
+code review,代码审查,zh
+time complexity,时间复杂度,zh
+space complexity,空间复杂度,zh
+algorithm design,算法设计,zh
+data structure,数据结构,zh
+parallel computing,并行计算,zh
+computer architecture,计算机体系结构,zh
+cybersecurity,网络安全,zh
+cryptography,密码学,zh
+blockchain,区块链,zh

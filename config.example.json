@@ -1,0 +1,28 @@
+{
+  "api_key": "",
+  "params": {
+    "lang_in": "auto",
+    "lang_out": "zh",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "qps": 4,
+    "watermark": false,
+    "alternating": false,
+    "mono_only": false,
+    "dual_only": false,
+    "no_terms": true,
+    "skip_scanned": true,
+    "ocr_workaround": false,
+    "font_family": "",
+    "glossary": "",
+    "pages": "",
+    "fetch_assets": false,
+    "formula_hint": true,
+    "bilingual_view": true,
+    "auto_fill": true,
+    "layout_check": true,
+    "protect_figures": true,
+    "ocr_scanned": true,
+    "rebuild_scrambled": true
+  }
+}

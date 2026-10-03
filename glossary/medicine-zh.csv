@@ -1,0 +1,64 @@
+source,target,tgt_lng
+clinical trial,临床试验,zh
+randomized controlled trial,随机对照试验,zh
+double blind,双盲,zh
+placebo control,安慰剂对照,zh
+patient cohort,患者队列,zh
+case report,病例报告,zh
+meta-analysis,荟萃分析,zh
+systematic review,系统综述,zh
+diagnostic criteria,诊断标准,zh
+differential diagnosis,鉴别诊断,zh
+prognosis,预后,zh
+incidence rate,发病率,zh
+prevalence,患病率,zh
+mortality rate,死亡率,zh
+morbidity,发病率,zh
+risk factor,危险因素,zh
+biomarker,生物标志物,zh
+pathogenesis,发病机制,zh
+pathophysiology,病理生理学,zh
+inflammation,炎症,zh
+chronic disease,慢性病,zh
+acute infection,急性感染,zh
+immune system,免疫系统,zh
+autoimmune disease,自身免疫病,zh
+allergic reaction,过敏反应,zh
+malignant tumor,恶性肿瘤,zh
+benign tumor,良性肿瘤,zh
+carcinoma,癌,zh
+metastasis,转移,zh
+cancer therapy,癌症治疗,zh
+chemotherapy,化疗,zh
+radiotherapy,放疗,zh
+immunotherapy,免疫治疗,zh
+targeted therapy,靶向治疗,zh
+surgical intervention,手术干预,zh
+clinical outcome,临床结局,zh
+adverse event,不良事件,zh
+side effect,副作用,zh
+dosage regimen,给药方案,zh
+drug administration,给药,zh
+pharmacokinetics,药代动力学,zh
+pharmacodynamics,药效动力学,zh
+therapeutic effect,治疗效果,zh
+drug resistance,耐药性,zh
+sensitivity,敏感性,zh
+blood pressure,血压,zh
+heart rate,心率,zh
+cardiac function,心功能,zh
+cardiovascular disease,心血管疾病,zh
+myocardial infarction,心肌梗死,zh
+hypertension,高血压,zh
+diabetes mellitus,糖尿病,zh
+insulin resistance,胰岛素抵抗,zh
+respiratory disease,呼吸系统疾病,zh
+pulmonary function,肺功能,zh
+renal function,肾功能,zh
+hepatic function,肝功能,zh
+neurological disorder,神经系统疾病,zh
+cognitive impairment,认知障碍,zh
+medical imaging,医学影像,zh
+computed tomography,计算机断层扫描,zh
+magnetic resonance imaging,磁共振成像,zh
+ultrasound examination,超声检查,zh

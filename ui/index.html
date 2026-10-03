@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF 翻译工作台</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="side">
+    <div class="brand">PDF 翻译工作台<small>BabelDOC + DeepSeek</small></div>
+    <div class="nav on" data-view="translate"><span class="ico">▸</span><span>翻译</span></div>
+    <div class="nav" data-view="terms"><span class="ico">≡</span><span>术语库</span></div>
+    <div class="nav" data-view="jobs"><span class="ico">◷</span><span>任务历史</span></div>
+    <div class="nav" data-view="settings"><span class="ico">⚙</span><span>设置</span></div>
+    <div class="side-foot">
+      <div><span class="dot" id="dotEngine"></span><span id="txtEngine">引擎检测中…</span></div>
+      <div><span class="dot" id="dotKey"></span><span id="txtKey">密钥未设置</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ======================= 翻译 ======================= -->
+    <section class="view on" id="v-translate">
+      <h2>翻译</h2>
+      <div class="sub">拖入 PDF，引擎按原文版面重排译文；扫描图型 PDF 自动启用底衬模式，图表与排版原样保留。</div>
+
+      <div class="banner" id="banner"></div>
+
+      <div class="card">
+        <div id="drop">
+          <b>拖拽 PDF 到此处</b>，或点击选择文件
+        </div>
+        <input type="file" id="pick" accept="application/pdf" multiple hidden>
+        <div class="files" id="files"></div>
+      </div>
+
+      <h3>翻译设置</h3>
+      <div class="card">
+        <div class="grid">
+          <label class="f">源语言
+            <select id="langIn"></select>
+          </label>
+          <label class="f">目标语言
+            <select id="langOut"></select>
+          </label>
+          <label class="f">模型
+            <select id="model">
+              <option value="deepseek-chat">deepseek-chat（快）</option>
+              <option value="deepseek-reasoner">deepseek-reasoner（更准，更贵）</option>
+            </select>
+          </label>
+          <label class="f">并发请求数 QPS
+            <input type="number" id="qps" min="1" max="32" value="4">
+          </label>
+          <label class="f">译文字号 ×<span id="fsVal">1.00</span>
+            <input type="range" id="fontScale" min="0.8" max="1.6" step="0.05" value="1">
+          </label>
+          <label class="f">页码范围（留空 = 全部，如 1-5,8）
+            <input type="text" id="pages" placeholder="全部">
+          </label>
+        </div>
+        <div class="row" style="margin-top:13px">
+          <label class="chk"><input type="checkbox" id="skipScanned" checked> 处理图文型 PDF</label>
+          <label class="chk"><input type="checkbox" id="rebuildScrambled" checked> 自动重建错序页（OCR）</label>
+          <label class="chk"><input type="checkbox" id="ocrWork"> 强制底衬模式</label>
+          <label class="chk"><input type="checkbox" id="autoFill" checked> 自动填充空白（逐段放大）</label>
+          <label class="chk"><input type="checkbox" id="autoGloss" checked> 自动选择相关术语表</label>
+          <label class="chk"><input type="checkbox" id="noTerms" checked> 关闭自动术语提取</label>
+          <label class="chk"><input type="checkbox" id="bilingual" checked> 生成逐段对照阅读视图</label>
+          <label class="chk"><input type="checkbox" id="dualOnly"> 只要双语对照</label>
+          <label class="chk"><input type="checkbox" id="monoOnly"> 只要译文</label>
+        </div>
+
+        <div class="gloss-head">
+          <span>启用的术语表</span>
+          <span class="row">
+            <span class="pill" id="glossCount"></span>
+            <button class="sm" id="glossAll">全选</button>
+            <button class="sm" id="glossNone">全不选</button>
+          </span>
+        </div>
+        <div class="picker" id="glossPicker"></div>
+        <div class="hint">术语按最长匹配强制替换。表越多，专有名词越一致，但冷门领域表若与本篇无关可能引入少量误替换。</div>
+      </div>
+
+      <div class="row">
+        <button class="pri" id="btnRun">开始翻译</button>
+        <button id="btnCancel" disabled>取消</button>
+        <button id="btnOpenOut">打开输出目录</button>
+      </div>
+
+      <div class="card" id="prog" style="display:none;margin-top:14px">
+        <div class="bar"><i id="bar"></i></div>
+        <div class="meta"><span id="stage">准备中…</span><span id="elapsed"></span><span id="pct">0%</span></div>
+        <div id="log"></div>
+      </div>
+
+      <h3>本次产出</h3>
+      <div class="card" id="outs"><div class="empty">还没有产出</div></div>
+    </section>
+
+    <!-- ======================= 术语库 ======================= -->
+    <section class="view" id="v-terms">
+      <h2>术语库</h2>
+      <div class="sub">CSV 三列：<code>source,target,tgt_lng</code>。翻译时按最长匹配生效，可新建多个表叠加使用。</div>
+
+      <div class="terms-layout">
+        <div>
+          <div class="card" style="padding:11px">
+            <div class="tlist" id="termList"></div>
+            <button class="sm" id="btnNewTerm" style="margin-top:9px;width:100%">新建术语表</button>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="row" style="justify-content:space-between;margin-bottom:10px">
+              <b id="termName">—</b>
+              <div class="row">
+                <span class="pill" id="termCount">0 条</span>
+                <button class="sm" id="btnAddRow">加一行</button>
+                <button class="sm pri" id="btnSaveTerm">保存</button>
+              </div>
+            </div>
+            <div id="termRows"><div class="empty">左侧选择一个术语表</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 任务历史 ======================= -->
+    <section class="view" id="v-jobs">
+      <h2>任务历史</h2>
+      <div class="sub">本次运行期间提交的全部任务。</div>
+      <div class="card">
+        <table>
+          <thead><tr><th>开始</th><th>文件</th><th>状态</th><th>进度</th><th>Token</th><th></th></tr></thead>
+          <tbody id="jobRows"><tr><td colspan="6" class="empty">暂无任务</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ======================= 设置 ======================= -->
+    <section class="view" id="v-settings">
+      <h2>设置</h2>
+      <div class="sub">密钥只保存在本机 <code>config.json</code>，不对外发送。</div>
+
+      <div class="card">
+        <div class="grid">
+          <label class="f">DeepSeek API Key
+            <input type="password" id="apiKey" placeholder="sk-…">
+          </label>
+          <label class="f">API Base URL
+            <input type="text" id="baseUrl">
+          </label>
+        </div>
+        <div class="row" style="margin-top:13px">
+          <button class="pri" id="btnSaveKey">保存密钥</button>
+          <button id="btnShowKey">显示/隐藏</button>
+        </div>
+      </div>
+
+      <h3>环境</h3>
+      <div class="card">
+        <table>
+          <tbody id="envRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- 文件选择弹窗 -->
+<div class="modal" id="modal">
+  <div class="box">
+    <div class="hd"><span>选择 PDF</span><span class="x" id="mClose" style="cursor:pointer;color:var(--dim)">✕</span></div>
+    <div class="path" id="mPath"></div>
+    <div class="bd" id="mBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

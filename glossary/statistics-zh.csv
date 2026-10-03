@@ -1,0 +1,59 @@
+source,target,tgt_lng
+descriptive statistics,描述性统计,zh
+inferential statistics,推断统计,zh
+probability distribution,概率分布,zh
+cumulative distribution function,累积分布函数,zh
+probability density function,概率密度函数,zh
+expected value,期望值,zh
+variance,方差,zh
+covariance,协方差,zh
+random sampling,随机抽样,zh
+stratified sampling,分层抽样,zh
+sampling distribution,抽样分布,zh
+central limit theorem,中心极限定理,zh
+point estimation,点估计,zh
+interval estimation,区间估计,zh
+maximum likelihood estimation,极大似然估计,zh
+least squares method,最小二乘法,zh
+regression analysis,回归分析,zh
+linear regression,线性回归,zh
+logistic regression,逻辑回归,zh
+multiple regression,多元回归,zh
+analysis of variance,方差分析,zh
+covariance analysis,协方差分析,zh
+chi square test,卡方检验,zh
+t test,t检验,zh
+nonparametric test,非参数检验,zh
+paired comparison,配对比较,zh
+Bonferroni correction,Bonferroni校正,zh
+multiple comparison,多重比较,zh
+effect size,效应量,zh
+statistical power,统计功效,zh
+type I error,第一类错误,zh
+type II error,第二类错误,zh
+p value,p值,zh
+confidence level,置信水平,zh
+residual analysis,残差分析,zh
+goodness of fit,拟合优度,zh
+model selection,模型选择,zh
+Bayesian inference,贝叶斯推断,zh
+prior distribution,先验分布,zh
+posterior distribution,后验分布,zh
+Markov chain Monte Carlo,马尔可夫链蒙特卡洛,zh
+bootstrap method,自助法,zh
+time series analysis,时间序列分析,zh
+autocorrelation,自相关,zh
+stationarity,平稳性,zh
+seasonal variation,季节性变化,zh
+survival analysis,生存分析,zh
+hazard ratio,风险比,zh
+odds ratio,优势比,zh
+relative risk,相对风险,zh
+meta analysis,荟萃分析,zh
+principal component analysis,主成分分析,zh
+factor analysis,因子分析,zh
+cluster analysis,聚类分析,zh
+discriminant analysis,判别分析,zh
+multivariate analysis,多元分析,zh
+missing data,缺失数据,zh
+outlier detection,离群点检测,zh
